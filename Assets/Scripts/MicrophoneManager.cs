@@ -23,7 +23,7 @@ public class MicrophoneManager : MonoBehaviour, IFocusable
 
     // Use this string to cache the text currently displayed in the text box.
     public Animator animator;
-    public TextToSpeechManager MyTTS;
+    /*public TextToSpeechManager MyTTS;*/
     public AudioSource selectedSource;
     //public Text captions;
     public CaptionsManager captionsManager;
@@ -124,17 +124,17 @@ public class MicrophoneManager : MonoBehaviour, IFocusable
         {
             // Don't activate speech recognition if the speech synthesizer's audio source
             // is still in active playback mode
-            if (!ttsAudioSrc.isPlaying)
+            /*if (!ttsAudioSrc.isPlaying)
             {
                 //captionsManager.ToggleKeywordRecognizer(false);
                 if (selectedSource != null)
                 {
                     selectedSource.Play();
                 }
-                //animator.Play("Idle");
+                //*/animator.Play("Idle");
                 //StartCoroutine(CoStartRecording());
                 StartRecording();
-            }
+            /*}*/
         }
     }
 
@@ -226,7 +226,7 @@ public class MicrophoneManager : MonoBehaviour, IFocusable
         }, false); 
 
         string msg = text;
-        string result = "I'm sorry, I'm not sure how to answer that";
+        string result = "Listening..."; /*"I'm sorry, I'm not sure how to answer that";*/
 
         if (await tmsBot.SendMessage(msg))
         {
@@ -253,7 +253,7 @@ public class MicrophoneManager : MonoBehaviour, IFocusable
         }
 
         //animator.Play("Happy");
-        MyTTS.SpeakText(result);
+        /*MyTTS.SpeakText(result);*/
 
         UnityEngine.WSA.Application.InvokeOnAppThread(() =>
         {
@@ -278,7 +278,7 @@ public class MicrophoneManager : MonoBehaviour, IFocusable
         captionsManager.SetCaptionsText(text);
 
         //animator.Play("Happy"); // TO DO: Need to fix, not working yet
-        MyTTS.SpeakText(text);
+        /*MyTTS.SpeakText(text);*/
 
         // Set DictationDisplay text to be textSoFar
         //DictationDisplay.text = textSoFar.ToString();
