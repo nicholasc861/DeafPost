@@ -50,10 +50,10 @@ namespace HoloToolkit.Sharing.Spawning
         private void InitializePrefabs()
         {
             typeToPrefab = new Dictionary<string, GameObject>(spawnablePrefabs.Count);
-            for (int i = 0; i < spawnablePrefabs.Count; i++)
+            /*for (int i = 0; i < spawnablePrefabs.Count; i++)
             {
                 typeToPrefab.Add(spawnablePrefabs[i].DataModelClassName, spawnablePrefabs[i].Prefab);
-            }
+            }*/
         }
 
         protected override void InstantiateFromNetwork(SyncSpawnedObject spawnedObject)

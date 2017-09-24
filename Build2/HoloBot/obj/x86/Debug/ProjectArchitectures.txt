@@ -1,0 +1,4 @@
+C:\Users\Nick\Documents\DeafPost3\Build2\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\Nick\Documents\DeafPost3\Build2\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Users\Nick\Documents\DeafPost3\Build2\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Users\Nick\Documents\DeafPost3\Build2\HoloBot\HoloBot.csproj;x86

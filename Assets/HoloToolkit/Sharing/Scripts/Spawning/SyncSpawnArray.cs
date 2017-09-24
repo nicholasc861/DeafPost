@@ -18,7 +18,7 @@ namespace HoloToolkit.Sharing.Spawning
     {
         public SyncSpawnArray(string field) : base(field) { }
 
-        public SyncSpawnArray() : base(string.Empty) { }
+        public SyncSpawnArray() : base(string.Empty) { }    
 
         protected override T CreateObject(ObjectElement objectElement)
         {
